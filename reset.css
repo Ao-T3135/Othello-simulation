@@ -1,0 +1,73 @@
+/* Box sizing rules */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+/* Remove default margin on common elements */
+body, h1, h2, h3, h4, p,
+figure, blockquote, dl, dd {
+  margin: 0;
+}
+
+/* Remove list styles and padding */
+ul, ol,
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+  padding: 0;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+/* Headings and form elements line-height */
+h1, h2, h3, h4,
+button, input, label {
+  line-height: 1.1;
+}
+
+/* Balance wrapping on headings */
+h1, h2, h3, h4 {
+  text-wrap: balance;
+}
+
+/* Clean link styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+/* Reset media elements */
+img, picture, svg {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts and reset form elements */
+input, button, textarea, select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  border: none;
+  background: none;
+}
+
+/* Ensure textarea without rows is usable */
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+/* Scroll margin for anchor targets */
+:target {
+  scroll-margin-block: 5ex;
+}
